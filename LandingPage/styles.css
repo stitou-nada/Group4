@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: 'masiva';
+    src: url('/Resources/FontsFree-Net-Masiva-Regular.ttf');
+}
+@font-face {
+    font-family: 'masiva2';
+    src: url('/Resources/FontsFree-Net-Masiva-Black_1.ttf');
+}
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  .header {
+    background-image: url('/Resources/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  button,
+  .cta,
+  .cta2,
+  .overlay__content a {
+    font-family: masiva;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+    padding: 9px 25px;
+  }
+  
+  .nav__links li a:hover {
+    color: #1F94E7;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  .cta2 {
+    padding: 9px 25px;
+    background-color: #1F94E7;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  .cta2:hover {
+    background-color: #1a7cc3;
+  }
+  .cta:hover {
+   color: #1F94E7;
+  }
+  main h1 {
+    font-family: masiva2;
+    font-size: 5rem;
+  }
+  main p {
+    font-family: masiva;
+    font-size: 1.5rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    ".     . . girl girl"
+    ". title . girl girl"
+    ". parag . girl girl"
+    ". play  . girl girl";
+  }
+  .title {
+    grid-area: title;
+  }
+  .parag {
+    grid-area: parag;
+  }
+  .play {
+    grid-area: play;
+  }
+  .girl {
+    grid-area: girl;
+  }
+  .playnow {
+    padding: 15px 30px;
+    background-color: #1F94E7;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    font-family: masiva2;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .playnow:hover {
+    background-color: #1a7cc3;
+  }
+  .about {
+        background-color: #eaeaea;
+        height: 100vh;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.3fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    ".      .      .      .    . "
+    "title2 title2 title2 title2 title2"
+    "girl2  .      .      .     ."
+    "girl2  parag2 parag2 parag2 .    "
+    "girl2  .      .      .     .";
+  }
+  .girl2 {
+    grid-area: girl2;
+  }
+  .title2 {
+    grid-area: title2;
+    font-family: masiva2;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1F94E7;
+
+  }
+  .parag2 {
+    grid-area: parag2;
+    font-family: masiva;
+    font-size: 2rem;
+    
+  }
+  .icon1 {
+    position: absolute;
+    top: 160%;
+    right: 40%;
+  }
+  .icon2 {
+    position: absolute;
+    top: 181%;
+    right: 75%;
+  }
+  
+  .icon3 {
+    position: absolute;
+    top: 125%;
+    right: 74%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 110%;
+    right: 10%;
+  }
+  
+  .icon5 {
+    position: absolute;
+    bottom: -100%;
+    right: 10%;
+  }
+  
+  
+
+
+ 
