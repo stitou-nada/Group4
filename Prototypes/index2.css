@@ -1,8 +1,53 @@
-.cr{
-    background-color: black;
+/* .cr{
+    background-color: rgb(199, 124, 124);
     box-sizing: border-box;
     width: 30px;
     height: 30px;
     float: left;
     border-right: solid rgb(255, 255, 255);
+} */
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0; 
+    height: 100vh;
+}
+.piano{
+    display: flex;
+    justify-content: center;
+}
+
+
+  .header {
+    background-image: url('./../landingPage/Resources/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    background-attachment: fixed;
+    display: flex;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+    ". .         ."
+    "img container ."
+    ". .         .";
+  }
+  
+.container{
+    display: grid;
+    grid-area: container;
+    background-color: white;
+    margin: auto;
+    height: 30rem;
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: content-box;
+
+}
+.img{
+    z-index: 99;
+    display: grid;
+    grid-area: img;
+    text-align: center;
 }
