@@ -1,3 +1,9 @@
+.header {
+  background-image: url('./.../landingPage/Resources/Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
 #timerwatch{
 	margin: 20px auto;
 	width: 800px;
@@ -5,6 +11,7 @@
 	font-size: 50px;
   color: rgb(71, 4, 4);
 }
+
 
 #textbox {
 	resize: none;
