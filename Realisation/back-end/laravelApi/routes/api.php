@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 route::get('data',[LoginController::class,"afficher"]);
+route::post('ajouter',[LoginController::class,"save"]);

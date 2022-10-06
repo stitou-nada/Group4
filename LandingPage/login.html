@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form >
+   name : <input type="text" id="inputname">
+   passwors: <input type="password" id="inputpassword">
+   <button type="button" onclick="getValue()" >login</button>
+  
+</form>
+<script>
+//     fetch('http://127.0.0.1:8000/api/data')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+
+
+  const getValue = () =>{
+      let inputname = document.getElementById("inputname").value; 
+      let inputpassword = document.getElementById("inputpassword").value; 
+
+    let x ={
+        name: inputname,
+        password: inputpassword
+    }
+
+     
+     
+     
+      fetch("http://127.0.0.1:8000/api/ajouter",{
+     method : "POST",
+     body : JSON.stringify(x),
+     headers: { 
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+     },
+        }).then(function(response){
+           return response.text();
+         }).then(function(text){
+    console.log(text);
+        }).catch(function(error){
+    console.log(error);
+     })
+
+        }
+    
+
+
+</script>
+</body>
+</html>
