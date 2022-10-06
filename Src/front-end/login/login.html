@@ -4,43 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    \
+    
     <link rel="stylesheet" href="login.css" />
     <title>LOGIN</title>
   </head>
   <body>
     <div class="fullSrceen"></div>
-    <img src="/assets/girl-laptop.png" id="laptop">
+    <img src="./assets/girl-laptop.png" id="laptop">
     <div class="login">
       <h2>LOGIN</h2>
-      <form action="" method="GET" id="form">
+      <form id="form">
         <div class="user">
           <div id="error_user"></div>
           <input
             type="text"
-            name="user"
-            id="user"
+            name="inputname"
+            id="inputname"
             autocomplete="off"
             required="off"
           />
-          <label for="user" class="label-name"> <span>Email</span></label>
+          <label for="user" class="label-name"> <span>Username</span></label>
         </div>
         <div class="pass">
           <div id="error_pass"></div>
           <input
             type="password"
-            name="password"
-            id="pass"
+            name="inputpassword"
+            id="inputpassword"
             autocomplete="off"
             required
           />
           <label for="password" class="label-name"><span>Password</span></label>
         </div>
-        <input type="submit" class="submit" id="btn" />
+        <button  type="button" onclick="getValue()" >login</button>
         <p>Don't have an account? <a href="register.html">Register</a>  now</p>
       </form>
     </div>
 
+
+
+
+
+
+    <script>
+    
+        const getValue = () =>{
+            let inputname = document.getElementById("inputname").value; 
+            let inputpassword = document.getElementById("inputpassword").value; 
+      
+          let x ={
+              name: inputname,
+              password: inputpassword
+          }
+      
+           
+           
+           
+            fetch("http://127.0.0.1:8000/api/ajouter",{
+           method : "POST",
+           body : JSON.stringify(x),
+           headers: { 
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+           },
+              }).then(function(response){
+                 return response.text();
+               }).then(function(text){
+          console.log(text);
+              }).catch(function(error){
+          console.log(error);
+           })
+      
+
+          
+              }
+          
+      
+      
+      </script>
    
   </body>
 </html>
