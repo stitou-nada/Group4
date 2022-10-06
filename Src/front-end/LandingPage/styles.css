@@ -19,7 +19,7 @@
     padding: 30px 10%;
   }
   .header {
-    background-image: url(/LandingPage/Resources/gamebackground.png);
+    background-image: url(Resources/gamebackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

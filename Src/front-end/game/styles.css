@@ -5,11 +5,11 @@
   }
   @font-face {
     font-family: 'masiva';
-    src: url('Resources/FontsFree-Net-Masiva-Regular.ttf');
+    src: url('./../LandingPage/Resources/FontsFree-Net-Masiva-Regular.ttf');
 }
 @font-face {
     font-family: 'masiva2';
-    src: url('Resources/FontsFree-Net-Masiva-Black_1.ttf');
+    src: url('./../LandingPage/Resources/FontsFree-Net-Masiva-Black_1.ttf');
 }
   
   header {
@@ -19,7 +19,7 @@
     padding: 30px 10%;
   }
   .header {
-    background-image: url(/LandingPage/Resources/gamebackground.png);
+    background-image: url(./../LandingPage/Resources/gamebackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
