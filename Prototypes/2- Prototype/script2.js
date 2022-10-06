@@ -22,12 +22,17 @@ document.addEventListener('keydown',(e)=>{
     
         document.getElementById("A").style.color="green"
     }
-    // else{
-    //     document.getElementById("A").style.color="red"
-
-    // }
+  
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key1 || e.key==key1.toLowerCase()) {
+        this.document.getElementById("A").style.color="black"
+        return
+    }
 
 })
+
+
 const key2='B'
 document.addEventListener('keydown',(e)=>{
     if(e.key==key2 || e.key==key2.toLowerCase()){
@@ -36,6 +41,12 @@ document.addEventListener('keydown',(e)=>{
         audioA.currentTime=0;
 
         document.getElementById("B").style.color="green"
+    }
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key2 || e.key==key2.toLowerCase()) {
+        this.document.getElementById("B").style.color="black"
+        return
     }
 
 })
@@ -48,7 +59,12 @@ document.addEventListener('keydown',(e)=>{
         document.getElementById("C").style.color="green"
 
     }
-   
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key3 || e.key==key3.toLowerCase()) {
+        this.document.getElementById("C").style.color="black"
+        return
+    }
 
 })
 const key4='D'
@@ -60,7 +76,12 @@ document.addEventListener('keydown',(e)=>{
 
         document.getElementById("D").style.color="green"
     }
-  
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key4 || e.key==key4.toLowerCase()) {
+        this.document.getElementById("D").style.color="black"
+        return
+    }
 
 })
 
@@ -75,15 +96,30 @@ document.addEventListener('keydown',(e)=>{
     }
    
     })
-    const key6='F'
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key5 || e.key==key5.toLowerCase()) {
+        this.document.getElementById("E").style.color="black"
+        return
+    }
+    
+})
+
+const key6='F'
 document.addEventListener('keydown',(e)=>{
     if(e.key==key6  || e.key==key6.toLowerCase()){
         // audioF.play()
         audioC.play()
         audioC.currentTime=0;
-        document.getElementById("F").style.color="green"
+        document.getElementById("F").style.color="black"
     }
    
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key6 || e.key==key6.toLowerCase()) {
+        this.document.getElementById("F").style.color="black"
+        return
+    }
+    
 })
 const key7='G'
 document.addEventListener('keydown',(e)=>{
@@ -92,8 +128,13 @@ document.addEventListener('keydown',(e)=>{
         audioG.currentTime=0;
         document.getElementById("G").style.color="green"
     }
-
-
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key7 || e.key==key7.toLowerCase()) {
+        this.document.getElementById("G").style.color="black"
+        return
+    }
+    
 })
 const key8='H'
 document.addEventListener('keydown',(e)=>{
@@ -102,6 +143,11 @@ document.addEventListener('keydown',(e)=>{
         audioH.currentTime=0;
         document.getElementById("H").style.color="green"
     }
+})
+document.addEventListener('keyup',(e)=>{
+    if(e.key==key8 || e.key==key8.toLowerCase()) {
+        this.document.getElementById("H").style.color="black"
+        return
+    }
     
-
 })
