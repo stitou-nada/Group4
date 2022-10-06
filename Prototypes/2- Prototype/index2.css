@@ -65,8 +65,9 @@
     
 } 
 .brd{
+    color:rgb(232 ,95, 196) ;
     padding: auto;
-    border: solid  2px;
+    border: solid rgb(232 ,95, 196) 2px;
     height: 50px;
     width: 50px;
     padding: 1px;
